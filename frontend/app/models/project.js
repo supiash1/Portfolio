@@ -6,6 +6,8 @@ export default DS.Model.extend({
   description: DS.attr('string'),
   stack: DS.attr('string'),
   repo: DS.attr('string'),
-  live: DS.attr('string')
+  live: DS.attr('string'),
+  images: DS.hasMany('image'),
+  skills: DS.hasMany('skill')
 
 });
