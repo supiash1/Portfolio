@@ -22,3 +22,7 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+
+# Portfolio
+Portfolio App using Ember Frontend and Rails API
+
