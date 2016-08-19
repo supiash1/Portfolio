@@ -2,8 +2,8 @@ import DS from 'ember-data';
 
 export default DS.Model.extend({
 
-	project_skill: DS.attr('string'),
-  project_id: DS.attr('number'),
+	name: DS.attr('string'),
+  projectId: DS.attr('number'),
 
   project: DS.belongsTo('project')
 

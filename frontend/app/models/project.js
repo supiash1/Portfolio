@@ -2,12 +2,11 @@ import DS from 'ember-data';
 
 export default DS.Model.extend({
 
-  title: DS.attr('string'),
+  name: DS.attr('string'),
   description: DS.attr('string'),
-  stack: DS.attr('string'),
-  repo: DS.attr('string'),
-  live: DS.attr('string'),
-  images: DS.hasMany('image'),
-  skills: DS.hasMany('skill')
+  demoUrl: DS.attr('string'),
+  sourceUrl: DS.attr('string'),
+  images: DS.hasMany('image', {embedded:true}),
+  skills: DS.hasMany('skill', {embedded:true})
 
 });

@@ -1,1 +1,18 @@
+<div class='list'>
+  {{#each model as |project|}}
+    <article class='project'>
+      <h2>{{project.name}}</h2>
+      <p>{{project.description}}</p>
+      <a href='{{project.sourceUrl}}' target='_blank'>Source</a>
+      <a href='{{project.demoUrl}}' target='_blank'>Live</a>
+      {{#each project.images as |image|}}
+      	<img class="img-responsive" src={{image.imageUrl}} alt="">
+      {{/each}}
+      {{#each project.skills as |skill|}}
+      	<p>{{skill.name}}</p>
+      {{/each}}
+    </article>
+  {{/each}}
+</div>
+
 {{outlet}}

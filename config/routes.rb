@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
 	mount_ember_app :frontend, to: "/"
 
-	resources :profiles, :only => [:show]
+	resources :projects, :only => [:index]
 end
