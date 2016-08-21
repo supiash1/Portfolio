@@ -29,6 +29,9 @@ gem 'jbuilder', '~> 2.5'
 gem 'carrierwave'
 gem 'pg'
 gem "ember-cli-rails"
+gem "figaro"
+gem 'fog-aws'
+gem "mini_magick"
 	
 gem 'active_model_serializers'
 
